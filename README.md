@@ -1,2 +1,6 @@
 # Evaluacion-ConstruccionSW-GrupoLosBenditos
 Evaluacion-ConstruccionSW-GrupoLosBenditos
+INTEGRANTES:
+JOEL MILTON QUISPE CRUZ
+MARCELO FLAVIO PAREDES ESTRADA
+ANTONI ALDAIR LERMA CONDORI
