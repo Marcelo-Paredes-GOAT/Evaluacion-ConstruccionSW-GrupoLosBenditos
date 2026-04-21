@@ -1,23 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Infografía - Grupo Los Benditos</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; background-color: #f4f4f9; padding: 20px; }
-        .container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: inline-block; }
-        h1 { color: #2c3e50; }
-        img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #ddd; }
-        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #24292e; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infografía - Grupo Los Benditos</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #3b82f6;
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --muted: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #cbd5f5;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.02);
+    }
+
+    .actions {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #2563eb;
+    }
+
+    .btn-dark {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-dark:hover {
+      background: #020617;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Infografía de Machine Learning</h1>
-        <p>Grupo: Los Benditos</p>
-        <img src="infografia.png" alt="Infografía de Machine Learning">
-        <br>
-        <a href="https://github.com/Marcelo-Paredes-GOAT/Evaluacion-ConstruccionSW-GrupoLosBenditos" class="btn">Ver Repositorio en GitHub</a>
-    </div>
+
+  <header>
+    <h1>Infografía de Machine Learning</h1>
+    <p>Grupo Los Benditos · Ingeniería de Sistemas</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Visualización del Proyecto</h2>
+      <p>Explora nuestra infografía sobre conceptos clave de Machine Learning aplicada al análisis de datos.</p>
+
+      <img src="infografia.png" alt="Infografía de Machine Learning" />
+
+      <div class="actions">
+        <a href="infografia.png" class="btn btn-primary" download>Descargar Infografía</a>
+        <a href="https://github.com/Marcelo-Paredes-GOAT/Evaluacion-ConstruccionSW-GrupoLosBenditos" class="btn btn-dark" target="_blank">Ver en GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Grupo Los Benditos · Proyecto Académico
+  </footer>
+
 </body>
 </html>
