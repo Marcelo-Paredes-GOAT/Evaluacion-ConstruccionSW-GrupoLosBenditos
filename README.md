@@ -26,3 +26,6 @@ En cuanto al modelo de clasificación, la **Regresión Logística** demostró se
 Modelos utilizados de data set utilizados: 
 https://www.kaggle.com/code/umairziact/diabetes-dataset 
 https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+PARA EJECUTARLO:
+pip install pandas scikit-learn matplotlib seaborn
+python modelo_diabetes.py
